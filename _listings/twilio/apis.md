@@ -41,7 +41,7 @@ apis:
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-front-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-front-post.md
 x-common:
 - type: x-net-library
   url: https://www.twilio.com/docs/csharp/install
