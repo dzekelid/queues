@@ -33,7 +33,7 @@ apis:
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/queues/master/_listings/akamai/ccu-v2-queues-queuename-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/queues/master/_listings/akamai/ccu-v2-queues-queuename-post.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
