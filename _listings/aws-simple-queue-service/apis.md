@@ -31,7 +31,7 @@ apis:
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/queues/master/_listings/aws-simple-queue-service/action-purgequeue-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/queues/master/_listings/aws-simple-queue-service/action-setqueueattributes-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-SQ
