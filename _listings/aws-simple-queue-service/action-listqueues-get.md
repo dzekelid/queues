@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListQueues&k=1:
+  /?Action=ListQueues:
     get:
       summary: ' List Queues '
       description: Returns a list of your queues
