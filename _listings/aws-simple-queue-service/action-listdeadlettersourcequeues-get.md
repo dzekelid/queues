@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListDeadLetterSourceQueues&k=1:
+  /?Action=ListDeadLetterSourceQueues:
     get:
       summary: ' List Dead Letter Source Queues '
       description: Returns a list of your queues that have the RedrivePolicy queue
