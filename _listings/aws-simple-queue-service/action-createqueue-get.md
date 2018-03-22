@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateQueue&k=1:
+  /?Action=CreateQueue:
     get:
       summary: ' Create Queue '
       description: Creates a new standard or FIFO queue or returns the URL of an existing
