@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetQueueAttributes&k=1:
+  /?Action=GetQueueAttributes:
     get:
       summary: ' Get Queue Attributes '
       description: Gets attributes for the specified queue
