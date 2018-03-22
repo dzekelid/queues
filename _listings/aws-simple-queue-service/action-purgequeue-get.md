@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=PurgeQueue&k=1:
+  /?Action=PurgeQueue:
     get:
       summary: ' Purge Queue '
       description: Deletes the messages in a queue specified by the QueueURL parameter
