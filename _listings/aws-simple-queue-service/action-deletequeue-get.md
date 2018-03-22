@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteQueue&k=1:
+  /?Action=DeleteQueue:
     get:
       summary: ' Delete Queue '
       description: Deletes the queue specified by the QueueUrl, even if the queue
