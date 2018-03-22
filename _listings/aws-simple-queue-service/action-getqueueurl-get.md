@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetQueueUrl&k=1:
+  /?Action=GetQueueUrl:
     get:
       summary: ' Get Queue Url '
       description: Returns the URL of an existing queue
