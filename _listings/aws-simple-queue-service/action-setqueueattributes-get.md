@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=SetQueueAttributes&k=1:
+  /?Action=SetQueueAttributes:
     get:
       summary: ' Set Queue Attributes '
       description: Sets the value of one or more queue attributes
