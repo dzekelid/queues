@@ -27,7 +27,7 @@ apis:
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-queues-queuename-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-queues-queuename-authorizationrules-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/service-bus/
