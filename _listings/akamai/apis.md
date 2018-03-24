@@ -20,8 +20,8 @@ tags:
 - Bots
 - Applications
 - API LIfeycle
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-23"
+modified: "2018-03-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/akamai/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -33,7 +33,7 @@ apis:
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/akamai/ccu-v2-queues-queuename-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/akamai/ccu-v2-queues-queuename-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
