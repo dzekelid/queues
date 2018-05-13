@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Simple Queue Service API
+  title: AWS Simple Queue Service API Create Queue
   version: 1.0.0
+  description: Creates a new standard or FIFO queue or returns the URL of an existing
+    queue.
 schemes:
 - http
 produces:
