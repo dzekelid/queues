@@ -32,15 +32,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-setqueueattributes-get.md
-- name: AWS Simple Queue Service API Delete Queue
-  description: Deletes the queue specified by the QueueUrl, even if the queue is empty.
+- name: AWS Simple Queue Service API Get Queue Attributes
+  description: Gets attributes for the specified queue.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSQS.png
   humanURL: https://aws.amazon.com/sqs/
   baseURL: http:://{host}//
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-deletequeue-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-getqueueattributes-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-SQ
