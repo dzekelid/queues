@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Simple Queue Service API
+  title: AWS Simple Queue Service API Purge Queue
   version: 1.0.0
+  description: Deletes the messages in a queue specified by the QueueURL parameter.
 schemes:
 - http
 produces:
