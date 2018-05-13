@@ -28,7 +28,26 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/google-task-queue/project-taskqueues-taskqueue-get.md
+- name: Google Task Queue API Get Task Queues
+  description: Get detailed information about a TaskQueue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/hands-on-app-engine-11-638.jpg
+  humanURL: https://cloud.google.com/appengine/docs/standard/python/taskqueue/
+  baseURL: http:://www.googleapis.com//taskqueue/v1beta2/projects
+  tags: Queues
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/google-task-queue/project-taskqueues-taskqueue-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/google-task-queue/project-taskqueues-taskqueue-get-postman.md
 x-common:
+- type: x-code
+  url: https://cloud.google.com/appengine/docs/standard/python/taskqueue/rest/libraries
+- type: x-documentation
+  url: https://cloud.google.com/appengine/docs/standard/python/taskqueue/rest/
+- type: x-performance
+  url: https://cloud.google.com/appengine/docs/standard/python/taskqueue/rest/performance
+- type: x-website
+  url: https://cloud.google.com/appengine/docs/standard/python/taskqueue/
 - type: x-code
   url: https://cloud.google.com/appengine/docs/standard/python/taskqueue/rest/libraries
 - type: x-documentation
