@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Simple Queue Service API
+  title: AWS Simple Queue Service API Get Queue Url
   version: 1.0.0
+  description: Returns the URL of an existing queue.
 schemes:
 - http
 produces:
