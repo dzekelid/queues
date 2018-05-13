@@ -32,15 +32,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-setqueueattributes-get.md
-- name: AWS Simple Queue Service API Purge Queue
-  description: Deletes the messages in a queue specified by the QueueURL parameter.
+- name: AWS Simple Queue Service API Set Queue Attributes
+  description: Sets the value of one or more queue attributes.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSQS.png
   humanURL: https://aws.amazon.com/sqs/
   baseURL: http:://{host}//
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-purgequeue-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-setqueueattributes-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-SQ
