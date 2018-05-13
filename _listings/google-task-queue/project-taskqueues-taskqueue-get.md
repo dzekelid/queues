@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: TaskQueue
-  description: Accesses a Google App Engine Pull Task Queue over REST.
+  title: Google Task Queue API Get Task Queues
+  description: Get detailed information about a TaskQueue.
   contact:
     name: Google
     url: https://google.com
