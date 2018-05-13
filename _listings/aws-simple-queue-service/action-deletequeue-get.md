@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Simple Queue Service API
+  title: AWS Simple Queue Service API Delete Queue
   version: 1.0.0
+  description: Deletes the queue specified by the QueueUrl, even if the queue is empty.
 schemes:
 - http
 produces:
