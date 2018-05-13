@@ -42,17 +42,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-post.md
-- name: Twilio Get Queues
-  description: Returns a list of queues within an account. The list includes pagingninformation.n
+- name: Twilio Add Queue
+  description: Create a new Queue resource.n
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-post-postman.md
 x-common:
 - type: x-net-library
   url: https://www.twilio.com/docs/csharp/install
