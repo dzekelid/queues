@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: ServiceBusManagementClient
-  description: Azure Service Bus client
+  title: Azure Service Bus API Queues Delete
+  description: Deletes a queue from the specified namespace in a resource group.
   version: 1.0.0
 host: management.azure.com
 basePath: /
