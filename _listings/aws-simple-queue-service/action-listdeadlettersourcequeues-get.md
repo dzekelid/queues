@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Simple Queue Service API
+  title: AWS Simple Queue Service API List Dead Letter Source Queues
   version: 1.0.0
+  description: Returns a list of your queues that have the RedrivePolicy queue attribute
+    configured with a dead letter queue.
 schemes:
 - http
 produces:
