@@ -42,17 +42,21 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-post.md
-- name: Twilio Get Queue Members
-  description: Get a specific member.
+- name: Twilio Update Queue Members
+  description: Posting a URL and Method to a Queue instance will dequeue a member
+    from anqueue and have the members call begin executing the TwiML document at that
+    URLnWhen redirecting a member of a queue addressed by CallSid, only the first
+    requestnwill succeed and return a 200 response code. A second request will fail
+    andnreturn an appropriate 400 response code.n
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-callsid-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-callsid-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-callsid-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-callsid-post-postman.md
 x-common:
 - type: x-net-library
   url: https://www.twilio.com/docs/csharp/install
