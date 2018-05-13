@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Simple Queue Service API
+  title: AWS Simple Queue Service API Get Queue Attributes
   version: 1.0.0
+  description: Gets attributes for the specified queue.
 schemes:
 - http
 produces:
