@@ -32,15 +32,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-setqueueattributes-get.md
-- name: AWS Simple Queue Service API Get Queue Url
-  description: Returns the URL of an existing queue.
+- name: AWS Simple Queue Service API List Dead Letter Source Queues
+  description: Returns a list of your queues that have the RedrivePolicy queue attribute
+    configured with a dead letter queue.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSQS.png
   humanURL: https://aws.amazon.com/sqs/
   baseURL: http:://{host}//
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-getqueueurl-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/aws-simple-queue-service/action-listdeadlettersourcequeues-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-SQ
