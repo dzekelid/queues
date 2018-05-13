@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Simple Queue Service API
+  title: AWS Simple Queue Service API List Queues
   version: 1.0.0
+  description: Returns a list of your queues.
 schemes:
 - http
 produces:
