@@ -28,7 +28,28 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-queues-queuename-authorizationrules-authorizationrulename-regeneratekeys-post.md
+- name: Azure Service Bus API Queues List All
+  description: Gets the queues within a namespace.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-service-bus-anything.png
+  humanURL: https://azure.microsoft.com/en-us/services/service-bus/
+  baseURL: http:://management.azure.com//
+  tags: Queues
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-queues-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-queues-get-postman.md
 x-common:
+- type: x-documentation
+  url: https://docs.microsoft.com/en-us/azure/service-bus/
+- type: x-pricing
+  url: https://azure.microsoft.com/en-us/pricing/details/service-bus/
+- type: x-service-level-agreements
+  url: https://azure.microsoft.com/en-us/support/legal/sla/service-bus/
+- type: x-status
+  url: https://azure.microsoft.com/en-us/status/
+- type: x-website
+  url: https://azure.microsoft.com/en-us/services/service-bus/
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/service-bus/
 - type: x-pricing
