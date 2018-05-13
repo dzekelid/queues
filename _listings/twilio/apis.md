@@ -42,17 +42,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-post.md
-- name: Twilio Get Queue Members
-  description: Returns the list of members in the queue identified by {QueueSid}.
+- name: Twilio Delete Queue Members
+  description: The DELETE method allows you to remove a Queue. Only empty queues arendeletable.n
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-members-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-delete-postman.md
 x-common:
 - type: x-net-library
   url: https://www.twilio.com/docs/csharp/install
