@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Add a Request
+  description: Add a Request
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,7 +19,7 @@ paths:
       description: Add a Request
       operationId: ccuv2queuesqueuename
       parameters:
-      - in: String
+      - in: query
         name: queueName
         description: Name of the queue
         type: string
