@@ -1,12 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Twilio
-  description: Twilio is a cloud communications Infrastructure as a Service(IaaS)
-    company based in San Francisco, California. Twilio allows software developers
-    to programmatically make and receive phone calls and send and receive text messages
-    using its web service APIs. Twilio's services are accessed over HTTP and are billed
-    based on usage.
+  title: Twilio Update Queue Members
+  description: Posting a URL and Method to a Queue instance will dequeue a member
+    from anqueue and have the members call begin executing the TwiML document at that
+    URLnWhen redirecting a member of a queue addressed by CallSid, only the first
+    requestnwill succeed and return a 200 response code. A second request will fail
+    andnreturn an appropriate 400 response code.n
   termsOfService: https://www.twilio.com/legal/tos
   version: v1
 host: api.twilio.com
