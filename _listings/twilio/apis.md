@@ -42,17 +42,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-post.md
-- name: Twilio Add Queue Members
-  description: This POST request allows you to change the FriendlyName or MaxSize.n
+- name: Twilio Get Queues
+  description: Returns a list of queues within an account. The list includes pagingninformation.n
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
   tags: Queues
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-queuesid-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/queues/master/_listings/twilio/accounts-accountsid-queues-get-postman.md
 x-common:
 - type: x-net-library
   url: https://www.twilio.com/docs/csharp/install
