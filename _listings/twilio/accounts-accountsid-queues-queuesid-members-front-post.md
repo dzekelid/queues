@@ -1,12 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Twilio
-  description: Twilio is a cloud communications Infrastructure as a Service(IaaS)
-    company based in San Francisco, California. Twilio allows software developers
-    to programmatically make and receive phone calls and send and receive text messages
-    using its web service APIs. Twilio's services are accessed over HTTP and are billed
-    based on usage.
+  title: Twilio Update Queue Members In Front
+  description: Posting a URL and Method to a Queue instance will dequeue a member
+    from anqueue and have the members call begin executing the TwiML document at that
+    URLnWhen dequeuing the Front of the queue, the next call in the queue will be
+    redirected.n
   termsOfService: https://www.twilio.com/legal/tos
   version: v1
 host: api.twilio.com
