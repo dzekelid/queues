@@ -74,6 +74,98 @@ paths:
           description: OK
       tags:
       - Queues
+  /?Action=GetQueueUrl:
+    get:
+      summary: Get Queue Url
+      description: Returns the URL of an existing queue.
+      operationId: getQueueUrl
+      x-api-path-slug: actiongetqueueurl-get
+      parameters:
+      - in: query
+        name: QueueName
+        description: The name of the queue whose URL must be fetched
+        type: string
+      - in: query
+        name: QueueOwnerAWSAccountId
+        description: The AWS account ID of the account that created the queue
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
+  /?Action=ListDeadLetterSourceQueues:
+    get:
+      summary: List Dead Letter Source Queues
+      description: Returns a list of your queues that have the RedrivePolicy queue
+        attribute configured with a dead letter queue.
+      operationId: listDeadLetterSourceQueues
+      x-api-path-slug: actionlistdeadlettersourcequeues-get
+      parameters:
+      - in: query
+        name: QueueUrl
+        description: The URL of a dead letter queue
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
+  /?Action=ListQueues:
+    get:
+      summary: List Queues
+      description: Returns a list of your queues.
+      operationId: listQueues
+      x-api-path-slug: actionlistqueues-get
+      parameters:
+      - in: query
+        name: QueueNamePrefix
+        description: A string to use for filtering the list results
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
+  /?Action=PurgeQueue:
+    get:
+      summary: Purge Queue
+      description: Deletes the messages in a queue specified by the QueueURL parameter.
+      operationId: purgeQueue
+      x-api-path-slug: actionpurgequeue-get
+      parameters:
+      - in: query
+        name: QueueUrl
+        description: The URL of the queue from which the PurgeQueue action deletes
+          messages
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
+  /?Action=SetQueueAttributes:
+    get:
+      summary: Set Queue Attributes
+      description: Sets the value of one or more queue attributes.
+      operationId: setQueueAttributes
+      x-api-path-slug: actionsetqueueattributes-get
+      parameters:
+      - in: query
+        name: |-
+          Attribute
+                      , Attribute.N.Name (key), Attribute.N.Value (value)
+        description: A map of attributes to set
+        type: string
+      - in: query
+        name: QueueUrl
+        description: The URL of the Amazon SQS queue whose attributes are set
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

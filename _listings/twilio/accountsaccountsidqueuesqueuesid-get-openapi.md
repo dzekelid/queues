@@ -153,6 +153,52 @@ paths:
           description: OK
       tags:
       - Queues
+    post:
+      summary: Add Queue Members
+      description: This POST request allows you to change the FriendlyName or MaxSize.n
+      operationId: this-post-request-allows-you-to-change-the-friendlyname-or-maxsize
+      x-api-path-slug: accountsaccountsidqueuesqueuesid-post
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: QueueSid
+        description: A 34 character string that uniquely identifies the queue
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
+  /Accounts/{AccountSid}/Queues:
+    get:
+      summary: Get Queues
+      description: Returns a list of queues within an account. The list includes pagingninformation.n
+      operationId: returns-a-list-of-queues-within-an-account-the-list-includes-paginginformation
+      x-api-path-slug: accountsaccountsidqueues-get
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
+    post:
+      summary: Add Queue
+      description: Create a new Queue resource.n
+      operationId: create-a-new-queue-resource
+      x-api-path-slug: accountsaccountsidqueues-post
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

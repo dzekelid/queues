@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Azure Service Bus
 x-complete: 1
@@ -74,20 +73,6 @@ paths:
           description: OK
       tags:
       - Queues
-  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules
-  : get:
-      summary: Queues List Authorization Rules
-      description: Gets all authorization rules for a queue.
-      operationId: Queues_ListAuthorizationRules
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-servicebusnamespacesnamespacenamequeuesqueuenameauthorizationrules-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Queues Authorization Rules
   ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules/{authorizationRuleName}
   : put:
       summary: Queues Create Or Update Authorization Rule
@@ -133,6 +118,20 @@ paths:
           description: OK
       tags:
       - Queues Authorization Rule
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules
+  : get:
+      summary: Queues List Authorization Rules
+      description: Gets all authorization rules for a queue.
+      operationId: Queues_ListAuthorizationRules
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-servicebusnamespacesnamespacenamequeuesqueuenameauthorizationrules-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues Authorization Rules
   ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules/{authorizationRuleName}/ListKeys
   : post:
       summary: Queues List Keys
@@ -167,4 +166,3 @@ paths:
           description: OK
       tags:
       - Queues Keys
----

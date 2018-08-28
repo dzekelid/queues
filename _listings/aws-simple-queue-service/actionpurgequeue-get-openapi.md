@@ -144,6 +144,28 @@ paths:
           description: OK
       tags:
       - Queues
+  /?Action=SetQueueAttributes:
+    get:
+      summary: Set Queue Attributes
+      description: Sets the value of one or more queue attributes.
+      operationId: setQueueAttributes
+      x-api-path-slug: actionsetqueueattributes-get
+      parameters:
+      - in: query
+        name: |-
+          Attribute
+                      , Attribute.N.Name (key), Attribute.N.Value (value)
+        description: A map of attributes to set
+        type: string
+      - in: query
+        name: QueueUrl
+        description: The URL of the Amazon SQS queue whose attributes are set
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

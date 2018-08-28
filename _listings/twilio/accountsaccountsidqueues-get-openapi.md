@@ -185,6 +185,20 @@ paths:
           description: OK
       tags:
       - Queues
+    post:
+      summary: Add Queue
+      description: Create a new Queue resource.n
+      operationId: create-a-new-queue-resource
+      x-api-path-slug: accountsaccountsidqueues-post
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues
 x-streamrank:
   polling_total_time_average: "0"
   polling_size_download_average: "0"

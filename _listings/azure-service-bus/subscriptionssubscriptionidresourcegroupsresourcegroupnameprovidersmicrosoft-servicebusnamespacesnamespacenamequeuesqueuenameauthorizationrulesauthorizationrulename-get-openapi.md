@@ -74,20 +74,6 @@ paths:
           description: OK
       tags:
       - Queues
-  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules
-  : get:
-      summary: Queues List Authorization Rules
-      description: Gets all authorization rules for a queue.
-      operationId: Queues_ListAuthorizationRules
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-servicebusnamespacesnamespacenamequeuesqueuenameauthorizationrules-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Queues Authorization Rules
   ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules/{authorizationRuleName}
   : put:
       summary: Queues Create Or Update Authorization Rule
@@ -133,6 +119,54 @@ paths:
           description: OK
       tags:
       - Queues Authorization Rule
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules
+  : get:
+      summary: Queues List Authorization Rules
+      description: Gets all authorization rules for a queue.
+      operationId: Queues_ListAuthorizationRules
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-servicebusnamespacesnamespacenamequeuesqueuenameauthorizationrules-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues Authorization Rules
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules/{authorizationRuleName}/ListKeys
+  : post:
+      summary: Queues List Keys
+      description: Primary and secondary connection strings to the queue.
+      operationId: Queues_ListKeys
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-servicebusnamespacesnamespacenamequeuesqueuenameauthorizationrulesauthorizationrulenamelistkeys-post
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues Keys
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/queues/{queueName}/authorizationRules/{authorizationRuleName}/regenerateKeys
+  : post:
+      summary: Queues Regenerate Keys
+      description: Regenerates the primary or secondary connection strings to the
+        queue.
+      operationId: Queues_RegenerateKeys
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-servicebusnamespacesnamespacenamequeuesqueuenameauthorizationrulesauthorizationrulenameregeneratekeys-post
+      parameters:
+      - in: query
+        name: No Name
+      - in: body
+        name: parameters
+        description: Parameters supplied to regenerate the authorization rule
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Queues Keys
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
